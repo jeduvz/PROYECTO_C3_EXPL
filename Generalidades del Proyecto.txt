@@ -1,11 +1,12 @@
 Título
-
+APLICACION PARA LA GESTIÓN DE USUARIOS DE LA EMPRESA MyPIME
 
 
 Descripción
-
-
+La presente aplicación, escrita en el lenguaje Python, permite la gestión de usuarios de la misma; permitiendo: Agregar -Actualizar -modificar - Eliminar   Usuarios
 
 
 Objetivo
+Diseñar una aplicación con base en los conocimientos aprendidos del lenguaje Python, que permita la gestión de usuarios de la empresa MyPIME.
+
 
