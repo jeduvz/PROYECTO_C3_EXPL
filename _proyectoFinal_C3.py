@@ -18,3 +18,22 @@ class Empleado():
 empleado1 = Empleado("Juan", "Perez", 30, 30000, "12345678", "01/01/2024")
 print(empleado1)
 
+class Jefe(Empleado):
+    def _init_(self, nombre, apellido, edad, salario, dni, fecha_vinculacion):
+        super()._init_(nombre, apellido, edad, salario, dni, fecha_vinculacion)
+        self.empleados_a_cargo = []
+
+    def agregar_empleado(self, empleado):
+        self.empleados_a_cargo.append(empleado)
+
+    def obtener_empleados_a_cargo(self):
+        return self.empleados_a_cargo
+
+    def _str_(self):
+        return f"Jefe: {self.obtener_nombre_completo()}, Edad: {self.edad}, Salario: {self.salario}, DNI: {self.dni}, Fecha de Vinculación: {self.fecha_vinculacion}, Empleados a Cargo: {len(self.empleados_a_cargo)}"
+# Ejemplo de uso:
+jefe1 = Jefe("Pedro", "Gomez", 35, 40000, "87654321", "01/01/2018")
+
+jefe1.agregar_empleado(empleado1)
+print(jefe1)
+
