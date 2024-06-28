@@ -37,3 +37,25 @@ jefe1 = Jefe("Pedro", "Gomez", 35, 40000, "87654321", "01/01/2018")
 jefe1.agregar_empleado(empleado1)
 print(jefe1)
 
+class Area():
+    def _init_(self, nombre, descripcion):
+        self.nombre = nombre
+        self.descripcion = descripcion
+        self.empleados = []
+
+    def agregar_empleado(self, empleado):
+        self.empleados.append(empleado)
+
+    def obtener_cantidad_empleados(self):
+        return len(self.empleados)
+
+    def obtener_empleados(self):
+        return self.empleados
+
+    def _str_(self):
+        return f"Área: {self.nombre}, Descripción: {self.descripcion}, Cantidad de Empleados: {len(self.empleados)}"  
+    # Ejemplo de uso:
+area1 = Area("Ventas", "Encargada de las ventas de la empresa")
+
+area1.agregar_empleado(empleado1)
+print(area1)
