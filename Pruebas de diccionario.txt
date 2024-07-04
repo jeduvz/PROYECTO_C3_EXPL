@@ -1,0 +1,2 @@
+En este archivo se realizan pruebas sobre los datos establecidos en estructuras como
+los diccionarios y las listas.
